@@ -126,8 +126,6 @@ AVLNode<Key, Value> *AVLNode<Key, Value>::getRight() const
   -----------------------------------------------
 */
 
-
-
 template <class Key, class Value>
 class AVLTree : public BinarySearchTree<Key, Value>
 {
@@ -556,3 +554,5 @@ void AVLTree<Key, Value>::nodeSwap(
 }
 
 #endif
+
+
