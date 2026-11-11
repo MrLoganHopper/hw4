@@ -248,6 +248,10 @@ protected:
 
     // Add helper functions here
 
+    static Node<Key, Value>* sucessor(Node<Key, Value>* current);
+    static void clearSubtree(Node<Key, Value>* current);
+    static int balancedHeight(Node<Key, Value>* current);
+
 
 protected:
     Node<Key, Value>* root_;
@@ -273,7 +277,7 @@ BinarySearchTree<Key, Value>::iterator::iterator(Node<Key,Value> *ptr)
 * A default constructor that initializes the iterator to NULL.
 */
 template<class Key, class Value>
-BinarySearchTree<Key, Value>::iterator::iterator() 
+BinarySearchTree<Key, Value>::iterator::iterator() : current_(ptr)
 {
     // TODO
 
